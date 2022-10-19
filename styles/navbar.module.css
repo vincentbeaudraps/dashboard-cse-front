@@ -1,0 +1,25 @@
+.Navbar{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: fit-content;
+    padding: 2rem;
+    gap: 2rem;
+    height: 100vh;
+    color: #222222;
+    background-color: #eaeaea;
+}
+
+.Title{
+    color: #0070f3;
+    align-self: flex-start;
+    font-weight: 800;
+    font-size: 1.5em;
+}
+
+.Button{
+    border:1px solid #222222;
+    padding: 0.5rem 1rem;
+    width: 100%;
+}

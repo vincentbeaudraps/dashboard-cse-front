@@ -1,6 +1,10 @@
 import Head from "next/head";
 import {BiUserPlus} from "react-icons/bi";
 import Table from "../components/table";
+import AddCandidat from "../components/addCandidat";
+import AddEmployeur from "../components/addEmployeur";
+import SideNav from "../components/sideNav";
+
 
 export default function Home() {
     return (
@@ -11,14 +15,12 @@ export default function Home() {
             <link rel="icon" href="../public/pro.ico"/>
         </Head>
 <main className="py-5">
-<h1 className="text-xl md:text-5xl text-center font-bold py-10"> Admin CSE </h1>
-<div className="container mx-auto flex justify-between py-5 border-b">
-    <div className="left flex gap-3 ">
-        <button className="flex bg-indigo-500 text-white px-4 py-2 border rounded-md hover:bg-grary-50 hover:bg-indigo-500 hover:text-gray-800">
-            Ajouter un utilisateur<span className="px-1"><BiUserPlus size={23}></BiUserPlus></span>
-        </button>
+<div className="container mx-auto flex justify-between py-1 border-b">
     </div>
-    </div>
+<div className="container mx-auto"><SideNav></SideNav></div>
+
+
+
     <div className="container mx-auto">
         <Table></Table>
     </div>

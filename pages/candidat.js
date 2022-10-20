@@ -6,7 +6,7 @@ export default function candidat() {
   return (
     <>
         <AddCandidat/>
-        <Link href='/'>Acceuil</Link>
+        <Link href='/'>Accueil</Link>
     </>
   )
 }

@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 export default function SideNav () {
     return (
-        <div className="w-60 h-full shadow-md bg-white absolute" id="sidenavSecExample">
+        <div className="w-60 h-full bg-white flex flex-col left-1 h-screen" id="sidenavSecExample">
             <div className="pt-4 pb-2 px-6">
                     <div className="flex items-center">
                         <div className="shrink-0">
@@ -31,6 +31,7 @@ export default function SideNav () {
             <hr className="my-2"/>
                 <ul className="relative px-1">
                     <li className="relative">
+                        <Link href="/employeur">
                         <a className="flex items-center text-sm py-4 px-6 h-12 overflow-hidden text-gray-700 text-ellipsis whitespace-nowrap rounded hover:text-blue-600 hover:bg-blue-50 transition duration-300 ease-in-out"
                            href="#!" data-mdb-ripple="true" data-mdb-ripple-color="primary">
                             <svg aria-hidden="true" focusable="false" data-prefix="fas" className="w-3 h-3 mr-3"
@@ -38,6 +39,7 @@ export default function SideNav () {
                             </svg>
                             <span>Ajouter un employeur</span>
                         </a>
+                        </Link>
                     </li>
                 </ul>
             <hr className="my-2"/>
@@ -53,7 +55,7 @@ export default function SideNav () {
                     </a>
                 </li>
             </ul>
-                <div className="text-center bottom-0 absolute w-full">
+                <div className="text-center bottom-0 w-full mt-auto">
                     <hr className="m-0"/>
                         <a href="#!" className="py-2 text-sm text-gray-700">Se déconnecter</a>
                 </div>

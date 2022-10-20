@@ -17,13 +17,15 @@ export default function SideNav () {
             <hr className="my-2"/>
             <ul className="relative px-1">
                 <li className="relative">
-                    <a className="flex items-center text-sm py-4 px-6 h-12 overflow-hidden text-gray-700 text-ellipsis whitespace-nowrap rounded hover:text-blue-600 hover:bg-blue-50 transition duration-300 ease-in-out"
-                       href="/addCandidat" data-mdb-ripple="true" data-mdb-ripple-color="primary">
-                        <svg aria-hidden="true" focusable="false" data-prefix="fas" className="w-3 h-3 mr-3" role="img"
-                             xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                        </svg>
-                        <span>Ajouter un candidat</span>
-                    </a>
+                    <Link href="/candidat">
+                        <a className="flex items-center text-sm py-4 px-6 h-12 overflow-hidden text-gray-700 text-ellipsis whitespace-nowrap rounded hover:text-blue-600 hover:bg-blue-50 transition duration-300 ease-in-out"
+                            data-mdb-ripple="true" data-mdb-ripple-color="primary">
+                            <svg aria-hidden="true" focusable="false" data-prefix="fas" className="w-3 h-3 mr-3" role="img"
+                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            </svg>
+                            <span>Ajouter un candidat</span>
+                        </a>
+                    </Link>
                 </li>
             </ul>
             <hr className="my-2"/>
